@@ -12,6 +12,10 @@ public class Book : Base
     {
         Title = title;
     }
+    public override string ToString()
+    {
+        return Title + " " + base.Id + " " + base.CreatedAt;
+    }
 }
 
 //

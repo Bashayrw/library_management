@@ -11,7 +11,7 @@ public class Base
 
     public Base(DateTime? createdAt = default)
     {
-        Id = new Guid();
+        Id = Guid.NewGuid();
         CreatedAt = createdAt == default ? DateTime.Now : createdAt;
 
     }
